@@ -33,7 +33,11 @@ def command_miramacho(m): # Definimos una función que resuleva lo que necesitem
     mensaje = frases[numero]
     bot.send_message( cid, mensaje)
 
-
+@bot.message_handler(commands=['repetir'])
+def command_repetir(m):
+    cid = m.chat.id
+    for i in range(10):
+        bot.send_message(cid, m.text[8:])
 
 while True: 
     time.sleep(300) 
