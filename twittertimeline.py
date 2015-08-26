@@ -1,3 +1,5 @@
+import tweepy
+
 @bot.message_handler(commands=['gettl'])
 def command_gettl(m):
     cid = m.chat.id
