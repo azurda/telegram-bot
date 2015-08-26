@@ -1,3 +1,6 @@
+import json
+import urllib
+
 @bot.message_handler(commands=['rae'])
 def command_rae(m):
      
