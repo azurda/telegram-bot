@@ -1,3 +1,3 @@
-# goncho-bot
+# telegram-bot
 ===============
-Bot de telegram
+telegram bot plugins
