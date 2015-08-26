@@ -1,3 +1,5 @@
+import tweepy 
+
 @bot.message_handler(commands=['find'])
 def command_find(m):
     cid = m.chat.id 
