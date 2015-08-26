@@ -1,3 +1,6 @@
+import urllib 
+import json
+
 @bot.message_handler(commands=['4chan'])
 def command_4chan(m):
     cid = m.chat.id
