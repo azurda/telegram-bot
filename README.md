@@ -12,6 +12,7 @@ List of included plugins:
 * *twitter* search
 * *4chan* random thread (v,b,int,g) [boards can be added or removed]
 * get current date
+* check if site is online (/isup)
 * get *twitter* timeline
 * get *danbooru* random image (nsfw)
 * get a random *forocoches* thread 
