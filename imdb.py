@@ -5,6 +5,9 @@ def command_imdb(m):
     url = "http://www.omdbapi.com/?t=%s&y=&plot=short&r=json" % token
     link = urllib.urlopen(url)
     data = json.loads(link.read())
+    if data['Response'] == 'False':
+        bot.send_message(cid, 'Pelicula no encontrada')
+    
     image = urllib.URLopener()
     image.retrieve(data['Poster'], "imdb_tmp.jpg")
     bot.send_photo(cid, open( 'imdb_tmp.jpg', 'rb'))
