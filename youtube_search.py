@@ -8,6 +8,8 @@ def command_youtube(m):
     # sustituir CLAVE API por tu API    
     link = urllib.urlopen("https://www.googleapis.com/youtube/v3/search?part=snippet&q=%s&key={CLAVE API}" % query)
     data = json.loads(link.read())
+    """Coge un video aleatorio del primero al tercero,
+    este rango se puede modificar o incluso dejar fijo"""
     rnd_no = random.randrange(0,3)
     id = data['items'][rnd_no]['id']['videoId'] 
     bot.send_message(cid, "http://www.youtube.com/watch?v=" + id)
