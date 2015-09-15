@@ -2,6 +2,7 @@
 def command_img(m):
     cid = m.chat.id
     token = m.text[5:]
+    token.encode('utf-8')
     link = urllib.urlopen("https://ajax.googleapis.com/ajax/services/search/images?v=1.0&q=" + token)
     data = json.loads(link.read())
     rnd_no = random.randrange(0,4)
