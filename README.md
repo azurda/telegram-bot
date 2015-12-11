@@ -19,3 +19,4 @@ List of included plugins:
 * repeat given text(spam feature)
 * send message to everyone who talked to him
 * *RAE* (Spanish dictionary)
+* weather forecast
