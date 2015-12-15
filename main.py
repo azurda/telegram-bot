@@ -4,7 +4,7 @@ import telebot # Librería de la API del bot.
 from telebot import types # Tipos para la API del bot.
 import time # Librería para hacer que el programa que controla el bot no se acabe.
 
-TOKEN = '131446566:AAHGutFdsxgf9X5YDKzxC__LkTAFrjSnFiQ' # Nuestro tokken del bot (el que @BotFather nos dió).
+TOKEN = '' # Nuestro token del bot (el que @BotFather nos dió).
 
 bot = telebot.TeleBot(TOKEN) # Creamos el objeto de nuestro bot.
 
